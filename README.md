@@ -4,7 +4,7 @@
 <br />
 
 > [!NOTE]
-> ## This work has now been merged into OrcaSlicer as of commit [878a7a0](https://github.com/SoftFever/OrcaSlicer/commit/878a7a0e58ce1c377ee5b09dc8eb25f777f69cf7)
+> ## This fork is to add a Python post processing script for working around temperature and fan control issues.
 
 <br />
 <br />
@@ -102,8 +102,15 @@ Add Nozzle information inside the ```machine_list``` parameter:
 }
 ```
 
+## 3. Install Python
 
-## 3. Usage
+Download Python from python.org  (https://www.python.org/downloads/release/python-3121/)
+
+Install Python for all users, under: ```C:\Program Files\Python```
+
+(This is required for the post processing script, used as a workaround for temperature and fan control issues. If you have Python installed elsewhere, you will need to modify the command in Post-processing Scripts section.)
+
+## 4. Usage
 
 Reload Orca Slicer once all details have been added.
 
