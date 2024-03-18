@@ -57,6 +57,8 @@
   "compatible_printers": [
     "Flashforge Adventurer 3 Series 0.6 Nozzle"
   ],
-  "filename_format": "{input_filename_base}.gcode",
-  "post_process": ""
+  "filename_format": "{input_filename_base}_{filament_type[initial_tool]}_{layer_height}mm.g",
+  "post_process": [
+      "\"C:\\Program Files\\Python\\python.exe\" \"C:\\Program Files\\OrcaSlicer\\resources\\profiles\\Flashforge\\scripts\\adv3-issues-workarounds.py\""
+  ]
 }
